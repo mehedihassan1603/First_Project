@@ -7,6 +7,7 @@ const loadCategory = async() =>{
     
 }
 
+
 const displayCategory = (aaa) =>{
     const getCategoryId = document.getElementById('category');
     aaa.forEach(element => {
@@ -28,6 +29,5 @@ const displayCategory = (aaa) =>{
 }
 const handleId = (id) =>{
     loadData(id);
-    
 }
 loadCategory();
