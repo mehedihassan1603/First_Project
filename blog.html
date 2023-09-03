@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
+</head>
+<body class="bg-slate-300">
+    <div class="bg-red-300 text-center py-5 mx-auto w-4/5">
+        <h1 class="text-2xl mg:text-2xl lg:text-3xl bg-green-400 p-2">Blog-1: Discuss the scope of var, let, and const</h1>
+        <button class="btn btn-primary text-xl mt-2">var </button>
+        <div class="text-left ml-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <ul class="list-disc flex flex-col gap-3 ">
+                <li>var is a Global scoped or function scoped.</li>
+                <li>It is Global Scoped because any variable that is declared with var outside a function block is available for use in the whole window.</li>
+                <li>It is a function scoped because function scoped when it is declared within a function, it is available and can be accessed only within that function.</li>
+                <li>var is a variable that can be re-declared and updated.</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-primary text-xl mt-2">let </button>
+        <div class="text-left ml-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <ul class="list-disc flex flex-col gap-3">
+                <li>let is a block scoped.</li>
+                <li>It can be updated but not re-declared</li>
+                <li>It can't be accessible outside the particular block ({block})</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-primary text-xl mt-2">const </button>
+        <div class="text-left ml-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <ul class="list-disc flex flex-col gap-3">
+                <li>const is also a block scoped.</li>
+                <li>It can't be updated or re-declared</li>
+                <li>When users declare a const variable, they need to initialize it, otherwise, it returns an error.</li>
+            </ul>
+        </div>
+
+        <h1 class="text-2xl mg:text-2xl lg:text-3xl bg-blue-400 p-2 mt-10">Blog-2: Tell us the use cases of null and undefined</h1>
+        <button class="btn btn-primary text-xl mt-2">null </button>
+        <div class="text-left ml-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <ul class="list-disc flex flex-col gap-3">
+                <li>Null in JavaScript means an empty value and is also a primitive type in JavaScript.</li>
+                <li>The variable which has been assigned as null contains no value.</li>
+                <li> Also, null is an object in JavaScript. When it gets assigned to a variable, it represents no value.</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-primary text-xl mt-2">undefined </button>
+        <div class="text-left ml-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <ul class="list-disc flex flex-col gap-3">
+                <li>Undefined, means the variable has been declared, but its value has not been assigned.</li>
+                <li>When we declare a variable but do not assign a value to it, the variable becomes undefined.</li>
+                <li>When we do not pass an argument for a function parameter, the default value is taken as undefined.</li>
+                <li>Besides, when a function doesn't return a value, it returns undefined.</li>
+            </ul>
+        </div>
+
+
+        <h1 class="text-2xl mg:text-2xl lg:text-3xl bg-purple-400 p-2 mt-10">Blog-3: What do you mean by REST API?</h1>
+        
+        <div class="text-left mx-12 my-5 text-lg md:text-xl lg:text-2xl">
+            <p>A REST API, which stands for Representational State Transfer Application Programming Interface, is a set of rules and conventions for building and interacting with web services. <br> 
+                It's a way for different software applications to communicate with each other over the internet. <br>
+            
+                For example, if I use a mobile app to fetch data from a server, that app is making requests to a REST API. <br> 
+                The app sends a GET request to a specific URL (resource), and the server responds with data in a specified format (representation), often in JSON. This allows the app to retrieve and display information from the server, update data, or perform other actions based on the API's rules. <br> <br>
+
+                So, a REST API is a standardized way for software applications to talk to each other over the internet, making it easier to access and exchange data between different systems
+            
+            </p>
+        </div>
+    </div>
+</body>
+</html>
